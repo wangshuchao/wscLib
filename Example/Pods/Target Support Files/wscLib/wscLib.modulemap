@@ -1,0 +1,6 @@
+framework module wscLib {
+  umbrella header "wscLib-umbrella.h"
+
+  export *
+  module * { export * }
+}
