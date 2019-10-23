@@ -10,6 +10,8 @@
 #endif
 #endif
 
+#import "UIView+MrWang.h"
+#import "UIViewController+WSCViewController.h"
 
 FOUNDATION_EXPORT double wscLibVersionNumber;
 FOUNDATION_EXPORT const unsigned char wscLibVersionString[];
