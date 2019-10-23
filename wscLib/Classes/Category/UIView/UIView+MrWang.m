@@ -158,4 +158,33 @@
     maskLayer.path = maskPath.CGPath;
     self.layer.mask = maskLayer;
 }
+
+
+
+- (UIViewController *)viewController {
+
+    UIResponder *next = self.nextResponder;
+    
+    while (next != nil) {
+        
+        if ([next isKindOfClass:[UIViewController class]]) {
+            
+            return (UIViewController *)next;
+        }
+        
+        next = next.nextResponder;
+    }
+    
+    return nil;
+}
+
+-(void)alertWithTips:(NSString *)tips{
+    UIAlertController *alertC = [UIAlertController alertControllerWithTitle:NSLocalizedString(@"提示", nil) message:NSLocalizedString(tips, nil) preferredStyle:UIAlertControllerStyleAlert];
+
+    UIAlertAction *cancel = [UIAlertAction actionWithTitle:NSLocalizedString(@"确定", nil) style:UIAlertActionStyleCancel handler:nil];
+    [alertC addAction:cancel];
+    [[self viewController]presentViewController:alertC animated:YES completion:nil];
+}
+
+
 @end

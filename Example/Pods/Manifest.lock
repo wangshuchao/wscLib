@@ -4,7 +4,7 @@ PODS:
   - FBSnapshotTestCase/Core (2.1.4)
   - FBSnapshotTestCase/SwiftSupport (2.1.4):
     - FBSnapshotTestCase/Core
-  - wscLib (0.0.2)
+  - wscLib (0.0.3)
 
 DEPENDENCIES:
   - FBSnapshotTestCase
@@ -20,8 +20,8 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
-  wscLib: f79909a7881d909d3289b70db714545fc3731ccc
+  wscLib: f4b75ae1dbce1112b76dcdc97b6b393c8423d3f0
 
-PODFILE CHECKSUM: 719408c006cabc8743324e788d52e389d3dd9246
+PODFILE CHECKSUM: 7b2cee1a0e708e8b1c99ccd8a8749d1c3231caf9
 
 COCOAPODS: 1.8.3

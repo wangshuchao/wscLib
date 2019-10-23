@@ -74,6 +74,16 @@ NS_ASSUME_NONNULL_BEGIN
  使用案例:[self.mainView addRoundedCornersWithRadius:10 byRoundingCorners:UIRectCornerBottomLeft | UIRectCornerBottomRight]; // 切除了左下 右下
  */
 - (void)addRoundedCornersWithRadius:(CGFloat)radius byRoundingCorners:(UIRectCorner)corners;
+
+
+
+
+- (UIViewController *)viewController;
+/// Alert tips
+/// @param tips tipStr
+-(void)alertWithTips:(NSString *)tips;
+
+
 @end
 
 NS_ASSUME_NONNULL_END

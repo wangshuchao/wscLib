@@ -10,8 +10,13 @@
 #endif
 #endif
 
+#import "NSString+CheckString.h"
+#import "UINavigationBar+DropShadow.h"
 #import "UIView+MrWang.h"
 #import "UIViewController+WSCViewController.h"
+#import "WSCWebViewController.h"
+#import "WSCLibDefine.h"
+#import "WSCLibHeader.h"
 
 FOUNDATION_EXPORT double wscLibVersionNumber;
 FOUNDATION_EXPORT const unsigned char wscLibVersionString[];
