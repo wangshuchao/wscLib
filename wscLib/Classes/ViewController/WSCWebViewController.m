@@ -132,7 +132,7 @@
         // 是否允许手势左滑返回上一级, 类似导航控制的左滑返回
         _webView.allowsBackForwardNavigationGestures = YES;
         //可返回的页面列表, 存储已打开过的网页
-       WKBackForwardList * backForwardList = [_webView backForwardList];
+//       WKBackForwardList * backForwardList = [_webView backForwardList];
         if (self.webUrl) {
             NSString *urlStr = self.webUrl;
                     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:urlStr]];

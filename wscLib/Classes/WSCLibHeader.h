@@ -15,6 +15,7 @@
 ///Category
 #import "UIView+MrWang.h"
 #import "UIViewController+WSCViewController.h"
-
+#import "NSObject+WSC.h"
+#import "NSString+CheckString.h"
 
 #endif

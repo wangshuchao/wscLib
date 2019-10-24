@@ -1,6 +1,6 @@
 {
   "name": "wscLib",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "summary": "A short description of wscLib.",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/wangshuchao/wscLib",
@@ -13,11 +13,11 @@
   },
   "source": {
     "git": "https://github.com/wangshuchao/wscLib.git",
-    "tag": "0.0.3"
+    "tag": "0.0.4"
   },
   "requires_arc": true,
   "platforms": {
-    "ios": "8.0"
+    "ios": "9.0"
   },
   "source_files": "wscLib/Classes/**/*.{h,m}"
 }

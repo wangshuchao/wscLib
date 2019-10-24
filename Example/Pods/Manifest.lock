@@ -1,27 +1,16 @@
 PODS:
-  - FBSnapshotTestCase (2.1.4):
-    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
-  - FBSnapshotTestCase/Core (2.1.4)
-  - FBSnapshotTestCase/SwiftSupport (2.1.4):
-    - FBSnapshotTestCase/Core
-  - wscLib (0.0.3)
+  - wscLib (0.0.4)
 
 DEPENDENCIES:
-  - FBSnapshotTestCase
   - wscLib (from `../`)
-
-SPEC REPOS:
-  trunk:
-    - FBSnapshotTestCase
 
 EXTERNAL SOURCES:
   wscLib:
     :path: "../"
 
 SPEC CHECKSUMS:
-  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
-  wscLib: f4b75ae1dbce1112b76dcdc97b6b393c8423d3f0
+  wscLib: 51913affd1193d51a80518395ea068e86249ae71
 
-PODFILE CHECKSUM: 7b2cee1a0e708e8b1c99ccd8a8749d1c3231caf9
+PODFILE CHECKSUM: 41be9855e2655cba4b4644acba251f92f364fb88
 
-COCOAPODS: 1.8.3
+COCOAPODS: 1.8.4

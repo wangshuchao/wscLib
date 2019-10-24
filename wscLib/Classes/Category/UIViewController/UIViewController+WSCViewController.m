@@ -19,19 +19,19 @@ NS_ASSUME_NONNULL_BEGIN
 -(void)alertWithTips:(NSString *)tips{
     [self alertTitle:@"提示" message:tips style:UIAlertControllerStyleAlert cancelAction:@"确定" cancelHandler:nil firstDefAction:nil firstHandler:nil secondDefAction:nil secondHandler:nil completion:nil];
 }
--(void)alertWithTips:(NSString *)tips okHandler:(void (^)(UIAlertAction * _Nonnull))okHandler{
+-(void)alertWithTips:(NSString *)tips okHandler:(void (^_Nullable)(UIAlertAction * _Nonnull))okHandler{
     [self alertTitle:@"提示" message:tips style:UIAlertControllerStyleAlert cancelAction:@"确定" cancelHandler:okHandler firstDefAction:nil firstHandler:nil secondDefAction:nil secondHandler:nil completion:nil];
 }
 
--(void)alertTitle:(NSString *)title message:(NSString *)msg cancel:(NSString *)cancelStr cancelHandler:(void (^)(UIAlertAction * action))cancelHandler ok:(NSString *)okStr okHandler:(void (^)(UIAlertAction * action))okHandler completion:(void (^)(void))completion{
+-(void)alertTitle:(NSString *_Nullable)title message:(NSString *_Nullable)msg cancel:(NSString *_Nullable)cancelStr cancelHandler:(void (^_Nullable)(UIAlertAction * action))cancelHandler ok:(NSString *_Nullable)okStr okHandler:(void (^_Nullable)(UIAlertAction *_Nullable action))okHandler completion:(void (^_Nullable)(void))completion{
     [self alertTitle:title message:msg style:UIAlertControllerStyleAlert cancelAction:cancelStr cancelHandler:cancelHandler firstDefAction:okStr firstHandler:okHandler secondDefAction:nil secondHandler:nil completion:completion];
 }
 
--(void)alertSheetStyleCancel:(NSString *__nonnull)cancelStr cancelHandler:(void (^)(UIAlertAction * _Nonnull))cancelHandler firstDefAction:(NSString *__nonnull)firstStr firstHandler:(void (^)(UIAlertAction * _Nonnull))firstHandler secondDefAction:(NSString *__nonnull)secondStr secondHandler:(void (^)(UIAlertAction * _Nonnull))secondHandler completion:(void (^)(void))completion{
+-(void)alertSheetStyleCancel:(NSString *)cancelStr cancelHandler:(void (^_Nullable)(UIAlertAction * _Nullable))cancelHandler firstDefAction:(NSString *__nullable)firstStr firstHandler:(void (^_Nullable)(UIAlertAction * __nullable))firstHandler secondDefAction:(NSString *__nullable)secondStr secondHandler:(void (^_Nullable)(UIAlertAction * __nullable))secondHandler completion:(void (^_Nullable)(void))completion{
     [self alertTitle:nil message:nil style:UIAlertControllerStyleActionSheet cancelAction:cancelStr cancelHandler:cancelHandler firstDefAction:firstStr firstHandler:firstHandler secondDefAction:secondStr secondHandler:secondHandler completion:completion];
 }
 
--(void)alertSheetSelectContryChina:(void (^)(UIAlertAction * _Nonnull))chinaHandler northArmica:(void (^)(UIAlertAction * _Nonnull))northHandler UK:(void (^)(UIAlertAction * _Nonnull))UKHandler australia:(void (^)(UIAlertAction * _Nonnull))austraHandler{
+-(void)alertSheetSelectContryChina:(void (^_Nullable)(UIAlertAction * __nullable))chinaHandler northArmica:(void (^_Nullable)(UIAlertAction * __nullable))northHandler UK:(void (^_Nullable)(UIAlertAction * __nullable))UKHandler australia:(void (^_Nullable)(UIAlertAction * __nullable))austraHandler{
     
     UIAlertController *alertController = [UIAlertController alertControllerWithTitle:NSLocalizedString(@"地区选择", nil) message:nil preferredStyle:(UIAlertControllerStyleActionSheet)];
     
@@ -50,7 +50,7 @@ NS_ASSUME_NONNULL_BEGIN
     [self presentViewController:alertController animated:YES completion:nil];
 }
 
--(void)alertTitle:(NSString *__nonnull)title message:(NSString *__nonnull)message style:(UIAlertControllerStyle)style cancelAction:(NSString *__nonnull)cancelStr cancelHandler:(void (^)(UIAlertAction * _Nonnull))cancelHandler firstDefAction:(NSString *__nonnull)firstStr firstHandler:(void (^)(UIAlertAction * _Nonnull))firstHandler secondDefAction:(NSString *__nonnull)secondStr secondHandler:(void (^)(UIAlertAction * _Nonnull))secondHandler completion:(void (^)(void))completion{
+-(void)alertTitle:(NSString *__nullable)title message:(NSString *__nullable)message style:(UIAlertControllerStyle)style cancelAction:(NSString *__nullable)cancelStr cancelHandler:(void (^_Nullable)(UIAlertAction * __nullable))cancelHandler firstDefAction:(NSString *__nullable)firstStr firstHandler:(void (^_Nullable)(UIAlertAction * __nullable))firstHandler secondDefAction:(NSString *__nullable)secondStr secondHandler:(void (^_Nullable)(UIAlertAction * __nullable))secondHandler completion:(void (^_Nullable)(void))completion{
     UIAlertController *alertC = [UIAlertController alertControllerWithTitle:NSLocalizedString(title, nil) message:NSLocalizedString(message, nil) preferredStyle:style];
     if (cancelStr) {
         UIAlertAction *cancel = [UIAlertAction actionWithTitle:NSLocalizedString(cancelStr, nil) style:UIAlertActionStyleCancel handler:cancelHandler];

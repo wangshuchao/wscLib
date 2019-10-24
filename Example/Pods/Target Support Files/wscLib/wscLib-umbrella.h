@@ -10,6 +10,7 @@
 #endif
 #endif
 
+#import "NSObject+WSC.h"
 #import "NSString+CheckString.h"
 #import "UINavigationBar+DropShadow.h"
 #import "UIView+MrWang.h"
