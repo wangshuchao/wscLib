@@ -1,5 +1,5 @@
 PODS:
-  - wscLib (0.0.4)
+  - wscLib (0.0.5)
 
 DEPENDENCIES:
   - wscLib (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  wscLib: 51913affd1193d51a80518395ea068e86249ae71
+  wscLib: 3126b216d22b4693284d79dd12bf2b0994e5e940
 
 PODFILE CHECKSUM: 41be9855e2655cba4b4644acba251f92f364fb88
 
