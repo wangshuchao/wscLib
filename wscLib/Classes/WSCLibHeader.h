@@ -17,5 +17,8 @@
 #import "UIViewController+WSCViewController.h"
 #import "NSObject+WSC.h"
 #import "NSString+CheckString.h"
+#import "UIColor+Gradual.h"
+#import "UIImage+QREncode.h"
+#import "UINavigationBar+DropShadow.h"
 
 #endif
