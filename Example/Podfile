@@ -8,6 +8,7 @@ target 'wscLib_Example' do
   target 'wscLib_Tests' do
     inherit! :search_paths
 
+    pod 'SAMKeychain'
 #    pod 'FBSnapshotTestCase'
   end
 end

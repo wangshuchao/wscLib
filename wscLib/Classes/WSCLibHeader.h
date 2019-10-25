@@ -12,6 +12,8 @@
 #import "WSCWebViewController.h"
 
 
+#import "MrWangUUID.h"
+
 ///Category
 #import "UIView+MrWang.h"
 #import "UIViewController+WSCViewController.h"

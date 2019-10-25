@@ -1,6 +1,6 @@
 {
   "name": "wscLib",
-  "version": "0.0.5",
+  "version": "0.0.8",
   "summary": "A short description of wscLib.",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/wangshuchao/wscLib",
@@ -13,11 +13,16 @@
   },
   "source": {
     "git": "https://github.com/wangshuchao/wscLib.git",
-    "tag": "0.0.5"
+    "tag": "0.0.8"
   },
   "requires_arc": true,
   "platforms": {
     "ios": "9.0"
   },
-  "source_files": "wscLib/Classes/**/*.{h,m}"
+  "source_files": "wscLib/Classes/**/*.{h,m}",
+  "dependencies": {
+    "SAMKeychain": [
+      "~> 1.5.3"
+    ]
+  }
 }
