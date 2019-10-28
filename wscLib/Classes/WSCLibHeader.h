@@ -13,6 +13,7 @@
 
 
 #import "MrWangUUID.h"
+#import "KeyBoardTool.h"
 
 ///Category
 #import "UIView+MrWang.h"
