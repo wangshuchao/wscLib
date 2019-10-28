@@ -28,5 +28,7 @@
 #define TabbarHeight (iPhoneX ? (49.f + 34.f) : (49.f))
 #define BottomSafeAreaHeight (iPhoneX ? (34.f) : (0.f))
 
+///color
+#define kWSCColor(r, g, b) [UIColor colorWithRed:r / 255.0 green:g / 255.0 blue:b / 255.0 alpha:1]
 
 #endif

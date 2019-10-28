@@ -7,6 +7,7 @@
 //
 
 #import "KeyBoardTool.h"
+#import "WSCLibDefine.h"
 
 @implementation KeyBoardTool
 
@@ -27,14 +28,14 @@
 - (UILabel *)topLabel{
     if (!_topLabel) {
         self.topLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 1)];
-        _topLabel.backgroundColor = kColor(225, 225, 225);
+        _topLabel.backgroundColor = kWSCColor(225, 225, 225);
     }
     return _topLabel;
 }
 - (UILabel *)bottomLabel{
     if (!_bottomLabel) {
         self.bottomLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 39, SCREEN_WIDTH, 1)];
-        _bottomLabel.backgroundColor = kColor(225, 225, 225);
+        _bottomLabel.backgroundColor = kWSCColor(225, 225, 225);
     }
     return _bottomLabel;
 }
@@ -51,7 +52,7 @@
         self.doneBtn = [UIButton buttonWithType:UIButtonTypeSystem];
         _doneBtn.frame = CGRectMake([UIScreen mainScreen].bounds.size.width - 70, 0, 70, 40);
         [_doneBtn setTitle:@"完成" forState:UIControlStateNormal];
-        [_doneBtn setTitleColor:kMainColor forState:UIControlStateNormal];
+        [_doneBtn setTitleColor:[UIColor systemBlueColor] forState:UIControlStateNormal];
         [self.doneBtn addTarget:self action:@selector(doneBtnClick) forControlEvents:UIControlEventTouchUpInside];
     }
     return _doneBtn;
