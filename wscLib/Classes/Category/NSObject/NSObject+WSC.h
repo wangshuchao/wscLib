@@ -19,6 +19,12 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param tips tipStr
 -(void)alertWithTips:(NSString *)tips;
 
+#pragma mark - 重写编码和反编码
+// 重写 NSObject 的编码和反编码方法
+- (void)encodeWithCoder:(NSCoder *)aCoder;
+- (instancetype)initWithCoder:(NSCoder *)aDecoder;
+
+
 @end
 
 NS_ASSUME_NONNULL_END
