@@ -22,13 +22,24 @@ NS_ASSUME_NONNULL_BEGIN
 -(void)alertWithTips:(NSString *)tips okHandler:(void (^_Nullable)(UIAlertAction * _Nonnull))okHandler{
     [self alertTitle:@"提示" message:tips style:UIAlertControllerStyleAlert cancelAction:@"确定" cancelHandler:okHandler firstDefAction:nil firstHandler:nil secondDefAction:nil secondHandler:nil completion:nil];
 }
-
+-(void)alertWithTips:(NSString *)tips
+       cancel:(NSString *)cancelStr
+cancelHandler:(void (^_Nullable)(UIAlertAction * __nullable cancelAction))cancelHandler
+           ok:(NSString *)okStr
+           okHandler:(void (^_Nullable)(UIAlertAction *_Nullable okAction))okHandler{
+    [self alertTitle:@"提示" message:tips style:UIAlertControllerStyleAlert cancelAction:@"取消" cancelHandler:cancelHandler firstDefAction:@"确定" firstHandler:okHandler secondDefAction:nil secondHandler:nil completion:nil];
+}
 -(void)alertTitle:(NSString *_Nullable)title message:(NSString *_Nullable)msg cancel:(NSString *_Nullable)cancelStr cancelHandler:(void (^_Nullable)(UIAlertAction * action))cancelHandler ok:(NSString *_Nullable)okStr okHandler:(void (^_Nullable)(UIAlertAction *_Nullable action))okHandler completion:(void (^_Nullable)(void))completion{
     [self alertTitle:title message:msg style:UIAlertControllerStyleAlert cancelAction:cancelStr cancelHandler:cancelHandler firstDefAction:okStr firstHandler:okHandler secondDefAction:nil secondHandler:nil completion:completion];
 }
 
 -(void)alertSheetStyleCancel:(NSString *)cancelStr cancelHandler:(void (^_Nullable)(UIAlertAction * _Nullable))cancelHandler firstDefAction:(NSString *__nullable)firstStr firstHandler:(void (^_Nullable)(UIAlertAction * __nullable))firstHandler secondDefAction:(NSString *__nullable)secondStr secondHandler:(void (^_Nullable)(UIAlertAction * __nullable))secondHandler completion:(void (^_Nullable)(void))completion{
     [self alertTitle:nil message:nil style:UIAlertControllerStyleActionSheet cancelAction:cancelStr cancelHandler:cancelHandler firstDefAction:firstStr firstHandler:firstHandler secondDefAction:secondStr secondHandler:secondHandler completion:completion];
+}
+
+-(void)alertSheetStyleTitle:(NSString *)title msgStr:(NSString *)msgStr Cancel:(NSString *)cancelStr cancelHandler:(void (^_Nullable)(UIAlertAction * _Nullable))cancelHandler firstDefAction:(NSString *__nullable)firstStr firstHandler:(void (^_Nullable)(UIAlertAction * __nullable))firstHandler secondDefAction:(NSString *__nullable)secondStr secondHandler:(void (^_Nullable)(UIAlertAction * __nullable))secondHandler completion:(void (^_Nullable)(void))completion{
+    
+    [self alertTitle:title message:msgStr style:UIAlertControllerStyleActionSheet cancelAction:cancelStr cancelHandler:cancelHandler firstDefAction:firstStr firstHandler:firstHandler secondDefAction:secondStr secondHandler:secondHandler completion:completion];
 }
 
 -(void)alertSheetSelectContryChina:(void (^_Nullable)(UIAlertAction * __nullable))chinaHandler northArmica:(void (^_Nullable)(UIAlertAction * __nullable))northHandler UK:(void (^_Nullable)(UIAlertAction * __nullable))UKHandler australia:(void (^_Nullable)(UIAlertAction * __nullable))austraHandler{
