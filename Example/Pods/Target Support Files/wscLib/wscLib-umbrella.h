@@ -10,6 +10,7 @@
 #endif
 #endif
 
+#import "NSDate+Wang.h"
 #import "NSObject+WSC.h"
 #import "NSString+CheckString.h"
 #import "UIColor+Gradual.h"
