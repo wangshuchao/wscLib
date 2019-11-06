@@ -14,6 +14,7 @@
 
 #import "MrWangUUID.h"
 #import "KeyBoardTool.h"
+#import "WSCFileManage.h"
 
 ///Category
 #import "UIView+MrWang.h"
@@ -23,5 +24,6 @@
 #import "UIColor+Gradual.h"
 #import "UIImage+QREncode.h"
 #import "UINavigationBar+DropShadow.h"
+#import "NSDate+Wang.h"
 
 #endif

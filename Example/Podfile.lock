@@ -1,6 +1,6 @@
 PODS:
   - SAMKeychain (1.5.3)
-  - wscLib (0.0.13):
+  - wscLib (0.0.15):
     - SAMKeychain (~> 1.5.3)
 
 DEPENDENCIES:
@@ -17,7 +17,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   SAMKeychain: 483e1c9f32984d50ca961e26818a534283b4cd5c
-  wscLib: e77851aaccfca8ed26496454c9f9611840f979e9
+  wscLib: fa0391ce938cb700f332fd9397702f5dd797ebe9
 
 PODFILE CHECKSUM: ce66d1c752f40ffa93b4a212fcd5bfd5a484c209
 

@@ -18,6 +18,7 @@
 #import "UINavigationBar+DropShadow.h"
 #import "UIView+MrWang.h"
 #import "UIViewController+WSCViewController.h"
+#import "WSCFileManage.h"
 #import "KeyBoardTool.h"
 #import "MrWangUUID.h"
 #import "WSCWebViewController.h"
