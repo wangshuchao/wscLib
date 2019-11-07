@@ -47,6 +47,17 @@
  @return 123****5555
  */
 -(NSString *)getMobileStrTypeDisplay;
+/// 判断是否是邮箱
+- (BOOL)isEmail;
+
+
+/// 判断字符串是不是纯数字字符串
+-(BOOL)isNumberStr;
+///判断密码合法性 6-20位 至少包含数字跟字母，可以有字符 */+.~!@#$%^&*()
+-(BOOL)isPasswordHaveNumAndChar;
+
+//判断是否是身份证号
+- (BOOL) isValidateIdentityCard;
 
 
 

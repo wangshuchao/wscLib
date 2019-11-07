@@ -111,6 +111,24 @@
         return NO;
     }
 }
+/// 判断字符串是不是纯数字字符串
+-(BOOL)isNumberStr{
+    NSString *numberRegex = @"[0-9]";
+    
+    NSPredicate *numberTest = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", numberRegex];
+    
+    return [numberTest evaluateWithObject:self];
+    
+}
+-(BOOL)isPasswordHaveNumAndChar{
+    NSString *pwsRegex = @"(?=.*([a-zA-Z].*))(?=.*[0-9].*)[a-zA-Z0-9-*/+.~!@#$%^&*()]{6,20}$";
+    
+    NSPredicate *numberTest = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", pwsRegex];
+    
+    return [numberTest evaluateWithObject:self];
+}
+
+
 //判断是否是邮箱
 - (BOOL)isEmail {
     NSString *emailRegex = @"[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}";
