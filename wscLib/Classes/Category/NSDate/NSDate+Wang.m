@@ -20,21 +20,21 @@
     NSDateComponents *cmps = [calendar components:type fromDate:self toDate:[NSDate date] options:0];
     
     if (cmps.year > 0) {
-        return  [NSString stringWithFormat:@"%ld年前",cmps.year];
+        return  [NSString stringWithFormat:@"%ld年前",(long)cmps.year];
     }else if (cmps.month > 0){
-        return [NSString stringWithFormat:@"%ld个月前",cmps.month];
+        return [NSString stringWithFormat:@"%ld个月前",(long)cmps.month];
     }else if (cmps.day > 0){
         if ([self isYestoday]) {
             return [NSString stringWithFormat:@"昨天"];
         }else{
-            return [NSString stringWithFormat:@"%ld天前",cmps.day];
+            return [NSString stringWithFormat:@"%ld天前",(long)cmps.day];
         }
     }else if (cmps.hour > 0){
-        return [NSString stringWithFormat:@"%ld小时前",cmps.hour];
+        return [NSString stringWithFormat:@"%ld小时前",(long)cmps.hour];
     }else if (cmps.minute > 0){
-        return [NSString stringWithFormat:@"%ld分钟前",cmps.minute];
+        return [NSString stringWithFormat:@"%ld分钟前",(long)cmps.minute];
     }else{
-        return [NSString stringWithFormat:@"%ld秒前",cmps.second];
+        return [NSString stringWithFormat:@"%ld秒前",(long)cmps.second];
     }
 }
 

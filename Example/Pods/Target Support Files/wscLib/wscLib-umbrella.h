@@ -24,6 +24,7 @@
 #import "WSCWebViewController.h"
 #import "WSCLibDefine.h"
 #import "WSCLibHeader.h"
+#import "WSTimer.h"
 
 FOUNDATION_EXPORT double wscLibVersionNumber;
 FOUNDATION_EXPORT const unsigned char wscLibVersionString[];

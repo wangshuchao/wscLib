@@ -15,6 +15,7 @@
 #import "MrWangUUID.h"
 #import "KeyBoardTool.h"
 #import "WSCFileManage.h"
+#import "WSTimer.h"
 
 ///Category
 #import "UIView+MrWang.h"
