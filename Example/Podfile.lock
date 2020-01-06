@@ -1,10 +1,10 @@
 PODS:
   - SAMKeychain (1.5.3)
-  - wscLib (0.0.19):
-    - SAMKeychain
+  - wscLib (0.0.21):
+    - SAMKeychain (~> 1.5.3)
 
 DEPENDENCIES:
-  - SAMKeychain
+  - SAMKeychain (~> 1.5.3)
   - wscLib (from `../`)
 
 SPEC REPOS:
@@ -17,8 +17,8 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   SAMKeychain: 483e1c9f32984d50ca961e26818a534283b4cd5c
-  wscLib: 5c83c30d7a9eda4a085b32bf762807c843dae9c1
+  wscLib: 17f613fe34c00a77768662f3625ab6b67e803783
 
-PODFILE CHECKSUM: 2be47dfb487ce23e71840fd6e26fa9fcbaac065e
+PODFILE CHECKSUM: bd9fe8867c25a448899bf24e234d43182c4c936a
 
 COCOAPODS: 1.8.4
