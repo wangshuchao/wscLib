@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'wscLib'
-  s.version          = '0.0.19'
+  s.version          = '0.0.20'
   s.summary          = 'A short description of wscLib.'
 
 # This description is used to generate tags and improve search results.
@@ -39,5 +39,5 @@ TODO: Add long description of the pod here.
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-   s.dependency 'SAMKeychain' , '~> 1.5.3'
+   s.dependency 'SAMKeychain'
 end
